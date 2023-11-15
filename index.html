@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Symbol.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Hlegal</title>
+</head>
+<body>
+    <header class="header-block header-light">
+        <a href="#">
+            <div class="logo">
+                <img class="header-light__light logo__light" src="./img/Logo-light.png" alt="logo">
+                <img class="header-dark__dark logo__dark" src="./img/Logo-dark.png" alt="Logo">
+            </div>
+        </a>
+        <div class="header-block__main">
+            <div class="info-block">
+                <div class="info-block__land lang-block">
+                    <div class="lang-block__item">
+                        <input type="radio" id="ukr" name="land" class="lang-block__input">
+                        <label for="ukr" class="lang-block__label label-checked">УК</label>
+                    </div>
+                    <div class="lang-block__item">
+                        <input type="radio" id="ru" name="land" class="lang-block__input">
+                        <label for="ru" class="lang-block__label label-checked">РУ</label>
+                    </div>
+                    <div class="lang-block__item">
+                        <input type="radio" id="en" name="land" class="lang-block__input" checked>
+                        <label for="en" class="lang-block__label label-checked">EN</label>
+                    </div>
+                </div>
+                <ul class="info-block__conteiner">
+                    <li class="info-block__address">
+                        <a href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4366011,30.5323027,19z/data=!4m13!1m7!3m6!1s0x40d4cf07295b8e39:0x17b2112e2dc0e7a!2z0LLRg9C70LjRhtGPINCc0LXRh9C90LjQutC-0LLQsCwgMTQvMSwg0JrQuNGX0LIsIDAyMDAw!3b1!8m2!3d50.4367949!4d30.532705!3m4!1s0x40d4cf07295b8e39:0x17b2112e2dc0e7a!8m2!3d50.4367949!4d30.532705" class="info-block__link" target="_blank" rel="noopener noreferrer nofollow">Kyiv, Mechnikova str, 14/1</a>
+                    </li>
+                    <li class="info-block__phone">
+                        <a href="tel:0800211927" class="info-block__link info-block__link--bold">0800 211 927</a>
+                    </li>
+                    <li class="info-block__facebook facebook-block">
+                        <a href="https://www.facebook.com/" class="facebook-block__item" target="_blank">
+                            <i class="fa-brands fa-facebook icon-social facebook-block__link"></i>
+                        </a>
+                    </li>
+                </ul>    
+            </div>
+            <div id="burgerMenu" class="info-block__mobile">
+                <i class="fa-solid fa-bars info-block__burger"></i>
+            </div>
+            <nav class="nav-block">
+                <ul class="nav-block__conteiner">
+                    <li class="nav-block__item">
+                        <a href="./pages/about.html" class="nav-block__link nav-block__link--first">about us</a>
+                    </li>
+                    <li>
+                        <a href="./pages/services.html" class="nav-block__link">services</a>
+                    </li>
+                    <li>
+                        <a href="./pages/team.html" class="nav-block__link">team</a>
+                    </li>
+                    <li>
+                        <a href="./pages/publications.html" class="nav-block__link">publications</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html" id="nav-block__link" class="nav-block__link">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="overlay"></div>
+    <nav class="mobile-nav">
+        <div class="mobile-nav__close">
+            <img src="./img/close.svg" alt="close">
+        </div>
+        <ul class="mobile-nav__conteiner">
+            <li class="mobile-nav__item">
+                <a href="./pages/about.html" class="mobile-nav__link mobile-nav__link--first">about us</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="./pages/services.html" class="mobile-nav__link">services</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="./pages/team.html" class="mobile-nav__link">team</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="./pages/publications.html" class="mobile-nav__link">publications</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="./pages/contact.html" class="mobile-nav__link">contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="main-conteiner">
+                <section class="main-top">
+                    <h1 class="main-title main-title--basic">you legal solutions provider</h1>
+                    <a href="#" class="main-top__link" id="scroll-to-bottom">
+                        <i class="fa-solid fa-chevron-down main-top__chevron"></i>
+                    </a>
+                </section>
+            <div class="wrapper"> 
+                <section class="main-tabs">
+                    <div class="main-content">
+                        <h2 class=" main-title main-content__text main-content__text--active">Consistent</h2>
+                        <h2 class="main-title main-content__text">Customer oriented</h2>
+                        <h2 class="main-title main-content__text">Innovative</h2>
+                        <h2 class="main-title main-content__text main-content__text--last">Business oriented</h2>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-content__item tab-content__item--active">
+                            <h3 class="tab-content__title">
+                                We turn the idea of legal services
+                            </h3>
+                            <p class="tab-content__text">
+                                Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.
+                            </p>
+                        </div>
+                        <div class="tab-content__item">
+                            <h3 class="tab-content__title">
+                                We turn the idea of legal services
+                            </h3>
+                            <p class="tab-content__text">
+                                Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.
+                            </p>
+                        </div>
+                        <div class="tab-content__item">
+                            <h3 class="tab-content__title">
+                                We turn the idea of legal services
+                            </h3>
+                            <p class="tab-content__text">
+                                Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.
+                            </p>
+                        </div>
+                        <div class="tab-content__item">
+                            <h3 class="tab-content__title">
+                                We turn the idea of legal services
+                            </h3>
+                            <p class="tab-content__text">
+                                Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="services-block">
+                    <div class="services-block__title services-title">
+                        <div class="services-title__block">
+                            <a href="./pages/services.html" class="services-title__link">Services
+                                <i class="fa-solid fa-chevron-right services-title__chevron"></i>
+                            </a>
+                        </div>
+                        <h2 class="services-title__title">What can we do better than others?</h2>
+                    </div>
+                    <div class="services-block__conteiner services-conteiner">
+                        <ul class="services-conteiner__block">
+                            <li>
+                                <img src="./img/services/1.png" alt="services">
+                            </li>
+                            <li>
+                                <h3 class="services-conteiner__title">IT and e-commerce</h3>
+                            </li>
+                            <li>
+                                <p class="services-conteiner__item">An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
+                            </li>
+                        </ul>
+                        <ul class="services-conteiner__block">
+                            <li>
+                                <img src="./img/services/2.png" alt="services">
+                            </li>
+                            <li>
+                                <h3 class="services-conteiner__title">Comprehensive daily legal support</h3>
+                            </li>
+                            <li>
+                                <p class="services-conteiner__item">In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
+                            </li>
+                        </ul>
+                        <ul class="services-conteiner__block">
+                            <li>
+                                <img src="./img/services/3.png" alt="services">
+                            </li>
+                            <li>
+                                <h3 class="services-conteiner__title">Structuring corporate relationships</h3>
+                            </li>
+                            <li>
+                                <p class="services-conteiner__item">Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
+                            </li>
+                        </ul>
+                        <ul class="services-conteiner__block">
+                            <li>
+                                <img src="./img/services/4.png" alt="services">
+                            </li>
+                            <li>
+                                <h3 class="services-conteiner__title">Building contractual relations</h3>
+                            </li>
+                            <li>
+                                <p class="services-conteiner__item">Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
+                            </li>
+                        </ul>
+                        <ul class="services-conteiner__block">
+                            <li>
+                                <img src="./img/services/5.png" alt="services">
+                            </li>
+                            <li>
+                                <h3 class="services-conteiner__title">Protection of business, intellectual property</h3>
+                            </li>
+                            <li>
+                                <p class="services-conteiner__item">And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
+                            </li>
+                        </ul>
+                        <ul class="services-conteiner__block">
+                            <li>
+                                <img src="./img/services/6.png" alt="services">
+                            </li>
+                            <li>
+                                <h3 class="services-conteiner__title">Judicial representation</h3>
+                            </li>
+                            <li>
+                                <p class="services-conteiner__item">Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section class="main-team">
+            <div class="wrapper">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="team-block">
+                            <div class="team-block__photo">
+                                <img src="./img/team/Team1.png" alt="man"class="team-block__image">
+                            </div>
+                            <div class="team-block__content">
+                                <ul>
+                                    <li class="team-block__link">
+                                        <a href="./pages/team.html" class="team-block__item">команда
+                                            <i class="fa-solid fa-chevron-right team-block__chevron"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <h2 class="team-block__title">
+                                            Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                                        </h2>
+                                    </li>
+                                    <li>
+                                        <p class="team-block__name">Олександр Олександровський</p>
+                                    </li>
+                                    <li>
+                                        <h6 class="team-block__position">Керуючий партнер</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="team-block">
+                            <div class="team-block__photo">
+                                <img src="./img/team/Team1.png" alt="man" class="team-block__image">
+                            </div>
+                            <div class="team-block__content">
+                                <ul>
+                                    <li>
+                                        <a href="./pages/team.html" class="team-block__item">команда
+                                            <i class="fa-solid fa-chevron-right team-block__chevron"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <h2 class="team-block__title">
+                                            Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                                        </h2>
+                                    </li>
+                                    <li>
+                                        <p class="team-block__name">Олександр Олександровський</p>
+                                    </li>
+                                    <li>
+                                        <h6 class="team-block__position">Керуючий партнер</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="team-block">
+                            <div class="team-block__photo">
+                                <img src="./img/team/Team1.png" alt="man" class="team-block__image">
+                            </div>
+                            <div class="team-block__content">
+                                <ul>
+                                    <li>
+                                        <a href="./pages/team.html" class="team-block__item">команда
+                                            <i class="fa-solid fa-chevron-right team-block__chevron"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <h2 class="team-block__title">
+                                            Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                                        </h2>
+                                    </li>
+                                    <li>
+                                        <p class="team-block__name">Олександр Олександровський</p>
+                                    </li>
+                                    <li>
+                                        <h6 class="team-block__position">Керуючий партнер</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <h3 class="partners__title">
+                They already trust us
+            </h3>
+            <div class="partners__conteiner">
+                <div class="partners__logo">
+                    <img src="./img/partners/hillel.png" alt="logo" class="partners__image">
+                </div>
+                <div class="partners__logo">
+                    <img src="./img/partners/wannaBiz.png" alt="logo" class="partners__image">
+                </div>
+                <div class="partners__logo">
+                    <img src="./img/partners/tapgerine.png" alt="logo" class="partners__image">
+                </div>
+                <div class="partners__logo">
+                    <img src="./img/partners/3dlook.png" alt="logo" class="partners__image">
+                </div>
+                <div class="partners__logo">
+                    <img src="./img/partners/orangear.png" alt="logo" class="partners__image">
+                </div>
+                <div class="partners__logo">
+                    <img src="./img/partners/adtelligent.png" alt="logo" class="partners__image">
+                </div>
+                <div class="partners__logo">
+                    <img src="./img/partners/clickky.png" alt="logo" class="partners__image">
+                </div>
+                <div class="partners__logo">
+                    <img src="./img/partners/ecoLeasing.png" alt="logo" class="partners__image">
+                </div>
+                <div class="partners__logo">
+                    <img src="./img/partners/infraTek.png" alt="logo" class="partners__image">
+                </div>
+                <div class="partners__logo">
+                    <img src="./img/partners/cityPark.png" alt="logo" class="partners__image">
+                </div>
+                <div class="partners__logo">
+                    <img src="./img/partners/artPrint.png" alt="logo" class="partners__image">
+                </div>
+                <div class="partners__logo">
+                    <img src="./img/partners/ultimate.png" alt="logo" class="partners__image">
+                </div>
+            </div>
+        </section>
+
+        <section class="publications">
+            <div class="wrapper services-block">
+                <div class="services-block__title services-title">
+                    <div class="services-title__block">
+                        <a href="#" class="services-title__link">Publications
+                            <i class="fa-solid fa-chevron-right services-title__chevron"></i>
+                        </a>
+                    </div>
+                    <h2 class="services-title__title">We have something to tell</h2>
+                </div>
+                <div class="publications-conteiner">
+                    <div class="publications-conteiner__block">
+                        <div class="publications-conteiner__photo">
+                            <img src="./img/publications/1.png" alt="gadgets" class="publications-conteiner__image">
+                        </div>
+                        <ul class="publications-conteiner__content">
+                            <li>
+                                <h4 class="publications-conteiner__title">Equity associate</h4>
+                            </li>
+                            <li>
+                                <h6 class="publications-conteiner__date">April 22</h6>
+                            </li>
+                            <li>
+                                <p class="publications-conteiner__item">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="publications-conteiner__block">
+                        <div class="publications-conteiner__photo">
+                            <img src="./img/publications/2.png" alt="logo" class="publications-conteiner__image">
+                        </div>
+                        <ul class="publications-conteiner__content">
+                            <li>
+                                <h4 class="publications-conteiner__title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4>
+                            </li>
+                            <li>
+                                <h6 class="publications-conteiner__date">September 29</h6>
+                            </li>
+                            <li>
+                                <p class="publications-conteiner__item">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="publications-conteiner__block publications-conteiner__block--last">
+                        <div class="publications-conteiner__photo">
+                            <img src="./img/publications/3.png" alt="people" class="publications-conteiner__image">
+                        </div>
+                        <ul class="publications-conteiner__content">
+                            <li>
+                                <h4 class="publications-conteiner__title">Millennial Testament</h4>
+                            </li>
+                            <li>
+                                <h6 class="publications-conteiner__date">August 19</h6>
+                            </li>
+                            <li>
+                                <p class="publications-conteiner__item">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-block">
+                <div class="footer-block__content">
+                    <div class="footer-block__top">
+                        <h6 class="footer-block__address">Kyiv, Mechnikova str, 14/1</h6>
+                        <a href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4366011,30.5323027,19z/data=!4m13!1m7!3m6!1s0x40d4cf07295b8e39:0x17b2112e2dc0e7a!2z0LLRg9C70LjRhtGPINCc0LXRh9C90LjQutC-0LLQsCwgMTQvMSwg0JrQuNGX0LIsIDAyMDAw!3b1!8m2!3d50.4367949!4d30.532705!3m4!1s0x40d4cf07295b8e39:0x17b2112e2dc0e7a!8m2!3d50.4367949!4d30.532705" class="footer-block__map" target="_blank" rel="noopener noreferrer nofollow">On map</a>
+                    </div>
+                    <ul class="footer-block__conteiner">
+                        <li>
+                            <a href="https://www.facebook.com/" class="footer-block__facebookItem" target="_blank">
+                                <i class="fa-brands fa-facebook icon-social footer-block__facebookLink"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:0800211927" class="footer-block__phone">0800 211 927</a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@forstudy.space" class="footer-block__mail" target="_blank">contact@forstudy.space</a>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="footer-block__law">
+                    <h6>&#169 2021 HLEGAL Law company, LLC</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./libs/bootstrap/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/b478714518.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

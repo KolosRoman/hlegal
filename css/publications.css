@@ -1,0 +1,123 @@
+.publications-main {
+  background-color: #F5F5FA;
+}
+
+.radio-button-container {
+  width: 233px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.radio-button-block {
+  display: grid;
+  grid-template-columns: 105px 122px;
+  grid-column-gap: 6px;
+  border-radius: 10px;
+  background-color: #E6E6F0;
+}
+.radio-button-block__link {
+  padding: 8px 30px 10px 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+  border-radius: 10px;
+  border: none;
+  background-color: #E6E6F0;
+  transition: all 0.4s;
+}
+.radio-button-block__link:hover {
+  background-color: #F5F5FA;
+}
+.radio-button-block__link--active {
+  background-color: #FFFFFF;
+}
+
+.publications-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  padding-top: 30px;
+}
+.publications-conteiner--newPage {
+  grid-row-gap: 30px;
+}
+.publications-conteiner__link {
+  text-decoration: none;
+}
+.publications-conteiner__block {
+  max-width: 513px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+.publications-conteiner__image {
+  width: 100%;
+}
+.publications-conteiner__content {
+  padding: 30px;
+}
+.publications-conteiner__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+}
+.publications-conteiner__date {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  padding: 15px 0;
+}
+.publications-conteiner__item {
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  padding-top: 15px;
+  border-top: 4px solid #E6E6F0;
+}
+
+.main-button-container {
+  padding: 30px 0 30px 0;
+}
+
+.main-button {
+  width: 211px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 56px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #24A3FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  margin: 0 auto;
+  transition: background-color 0.4s;
+  position: relative;
+  top: 0;
+}
+.main-button:hover {
+  background-color: #006CCF;
+}
+.main-button:active {
+  top: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .publications-conteiner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .publications-conteiner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=publications.css.map */

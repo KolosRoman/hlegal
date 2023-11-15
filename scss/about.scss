@@ -1,0 +1,313 @@
+@import "variables";
+
+
+.about-top {
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 280px 60px 280px;
+    display: flex;
+
+    &--bottom {
+        padding-top: 60px;
+    }
+
+    &__content {
+        flex: 70%;
+        padding: 0 30px 48px 0;
+    }
+
+    &__achievement {
+        flex: 30%;
+        padding-left: 30px;
+        border-left: 4px solid $color-grey-separator;
+
+        &--bottom {
+            border-left: none;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__text {
+        font-size: 19px;
+        line-height: 30px;
+        color: $color-black;
+
+        &--top {
+            padding: 28px 0;
+        }
+
+        &--center {
+            padding: 28px 0;
+        }
+    }
+}
+
+.achievement-block {
+    display: grid;
+    grid-row-gap: 40px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        padding-bottom: 10px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &--first {
+
+            &::before {
+                content: url(../img/aboutPage/flag.svg);
+                padding-right: 8px;
+            }
+        }
+
+        &--second {
+            &::before {
+                content: url(../img/aboutPage/bag.svg);
+                padding-right: 8px;
+            }
+        }
+
+        &--third {
+            &::before {
+                content: url(../img/aboutPage/star.svg);
+                padding-right: 8px;
+            }
+        }
+
+        &--bottom {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-main;
+    }
+}
+
+.about-team {
+    width: 100%;
+    height: 31vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/aboutPage/Team.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &__title {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 117px;
+        letter-spacing: 63px;
+        text-transform: uppercase;
+        padding-left: 63px;
+        color: $color-white;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    }
+}
+
+.achievement-main {
+    background-color: $color-grey-main;
+    padding: 30px 0 60px 0;
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $color-main;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+
+.about-achievement {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+
+    &__block {
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-white;
+        border-radius: 12px;
+    }
+}
+
+.carousel-indicators {
+    bottom: -68px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $color-regular;
+}
+
+.achievement-bottom {
+    display: none;
+}
+
+
+@media screen and (max-width: 1460px) {
+
+    .about-top {
+        padding: 0 60px 60px 60px;
+
+        &--bottom {
+            padding-top: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .about-team {
+
+        &__title {
+            font-size: 86px;
+            line-height: 105px;
+        }
+    }
+
+    .about-achievement {
+
+        &__block {
+            height: 90px;
+        }
+
+        &__item {
+            width: 93%;
+
+            &--first {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-team {
+
+        &__title {
+            font-size: 46px;
+            line-height: 56px;
+        }
+    }
+
+    .about-top {
+        display: block;
+
+        &--bottom {
+            padding-top: 60px;
+        }
+
+        &__content {
+            padding: 0;
+        }
+
+        &__achievement {
+            margin-top: 30px;
+
+            &--bottom {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .about-achievement {
+
+        &__block {
+            height: 70px;
+        }
+    } 
+}
+
+@media screen and (max-width: 603px) {
+
+    // .breadcrumb-item.active {
+    //     font-size: 20px;
+    //     line-height: 24px;
+    // }
+
+    .about-team {
+
+        &__title {
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: 13px;
+            padding-left: 13px;
+        }
+    }
+
+    .about-top {
+        padding: 0 30px 30px 30px;
+
+        &--bottom {
+            padding-top: 30px;
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+
+    .achievement-top {
+        display: none;
+    }
+
+    .achievement-bottom {
+        display: block;
+    }
+
+    .achievement-block {
+
+        &__title {
+
+            &--bottom {
+                font-size: 30px;
+                line-height: 37px;
+            }
+        }
+    }
+
+    .about-achievement {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__block {
+            width: 255px;
+            height: 90px;
+        }
+
+        &__item {
+            width: auto;
+        }
+    }
+}

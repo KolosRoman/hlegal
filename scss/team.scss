@@ -1,0 +1,129 @@
+@import "variables";
+
+
+.team-title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 120px 0 120px;
+}
+
+.card-section {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+}
+
+.card-block {
+
+    &__link {
+        text-decoration: none;
+        display: block;
+    }
+
+    &__photo {
+        height: 400px;
+        border-radius: 12px;
+        background-color: #CACADB;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__image {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    &__user {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+
+
+    &__arrow {
+        width: 32px;
+        height: 32px;
+        background-color: $color-grey-main;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__chevron {
+        color: $color-regular;
+        line-height: 7px;
+    }
+
+    &__userName {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-main;
+    }
+
+    &__userInfo {
+        font-size: 14px;
+        line-height: 22px;
+        color: $color-grey-text;
+        padding-top: 5px;
+    }
+
+    &:hover {
+
+        & .card-block__userName,
+        & .card-block__chevron {
+            color: $color-accent;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1460px) {
+
+    .card-block {
+
+        &__image {
+            width: auto;
+            height: 100%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .team-title {
+            padding: 0;
+        }
+}
+
+@media screen and (max-width: 768px) {
+
+    .card-section {
+            grid-template-columns: repeat(2, 1fr);
+        }
+}
+
+@media screen and (max-width: 460px) {
+
+    .team-title {
+        padding: 0;
+        font-size: 30px;
+        line-height: 37px;
+    }
+    
+    .card-section {
+        grid-template-columns: 1fr;
+    }
+}
